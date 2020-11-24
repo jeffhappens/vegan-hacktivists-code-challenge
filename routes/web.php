@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
+use App\Http\Controllers\QuestionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/','PageController@home');
+Route::get('/', [ PageController::class, 'home' ] );
+Route::post('/', [ QuestionController::class, 'addQuestion' ] );
