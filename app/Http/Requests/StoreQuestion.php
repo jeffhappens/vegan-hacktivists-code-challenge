@@ -31,4 +31,13 @@ class StoreQuestion extends FormRequest
             */
         ];
     }
+
+    public function messages()
+    {
+        return [
+            'question.required' => '* Questions cannot be blank',
+            'question.min' => '* Questions must be at least 5 characters',
+            'question.ends_with' => '* Questions must end with a "?"'
+        ];
+    }
 }

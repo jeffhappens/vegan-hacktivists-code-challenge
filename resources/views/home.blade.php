@@ -26,7 +26,7 @@
         @if(!$questions->isEmpty())
             @foreach($questions as $question)
                 <div class="col-md-12 d-flex justify-content-between align-items-center bg-white rounded shadow-sm my-4 py-4">
-                    <div>
+                    <div class="text-break">
                         <h3>
                             <a class="text-body" href="{{ route('answers', ['id' => $question->id ]) }}">{{ $question->question_text }}</a>
                         </h3>
