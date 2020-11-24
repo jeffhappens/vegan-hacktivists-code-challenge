@@ -6,7 +6,7 @@
     <link href="/css/app.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<body>
+<body class="bg-light">
     <div class="container">
         @yield('content')
     </div>
